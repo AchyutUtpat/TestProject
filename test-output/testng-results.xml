@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="81833" started-at="2020-08-16T16:51:52Z" finished-at="2020-08-16T16:53:14Z">
+    <groups>
+    </groups>
+    <test name="Validating Test" duration-ms="81833" started-at="2020-08-16T16:51:52Z" finished-at="2020-08-16T16:53:14Z">
+      <class name="UsTechSol.TestFlipKartSearchPage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:UsTechSol.TestFlipKartSearchPage@4ebff610]" name="initialize" is-config="true" duration-ms="10147" started-at="2020-08-16T16:51:52Z" finished-at="2020-08-16T16:52:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="CloseLoginwindow()[pri:0, instance:UsTechSol.TestFlipKartSearchPage@4ebff610]" name="CloseLoginwindow" duration-ms="70552" started-at="2020-08-16T16:52:02Z" finished-at="2020-08-16T16:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseLoginwindow -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:UsTechSol.TestFlipKartSearchPage@4ebff610]" name="teardown" is-config="true" duration-ms="1037" started-at="2020-08-16T16:53:13Z" finished-at="2020-08-16T16:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- UsTechSol.TestFlipKartSearchPage -->
+    </test> <!-- Validating Test -->
+  </suite> <!-- Suite -->
+</testng-results>

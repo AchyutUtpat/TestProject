@@ -1,0 +1,4 @@
+22:23:15.152 [main] DEBUG freemarker.cache - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/aventstack/extentreports/5.0.2/extentreports-5.0.2.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+22:30:03.199 [main] INFO  resources.BaseDetails - Navigation to Search page is displayed
+22:31:51.282 [main] INFO  resources.BaseDetails - Navigation to Search page is displayed
+22:33:34.980 [main] INFO  resources.BaseDetails - Navigation to Search page is displayed
