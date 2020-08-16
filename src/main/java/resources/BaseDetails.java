@@ -21,14 +21,14 @@ public class BaseDetails {
 	public WebDriver initializeDriver() throws IOException
 	{
 		prop= new Properties();
-		FileInputStream fis=new FileInputStream("D:\\Learnings\\UsTechSolutions\\FlipAssignment\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		//String browserName=System.getProperty("browser");
 		String browserName=prop.getProperty("browser");
 		if(browserName.contains("chrome"))
 		{
 			
-			System.setProperty("webdriver.chrome.driver","D:\\Learnings\\UsTechSolutions\\FlipAssignment\\src\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\chromedriver.exe");
 			ChromeOptions options=new ChromeOptions(); 
 			if(browserName.contains("headless"))
 			{
@@ -39,13 +39,13 @@ public class BaseDetails {
 		}
 		else if(browserName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver","D:\\Learnings\\UsTechSolutions\\FlipAssignment\\src\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\src\\geckodriver.exe");
 			 driver = new FirefoxDriver();
 			
 		}
 		else if(browserName.equals("IE"))
 		{
-			System.setProperty("webdriver. ie. driver","D:\\Learnings\\UsTechSolutions\\FlipAssignment\\src\\IEDriverServer.exe");
+			System.setProperty("webdriver. ie. driver",System.getProperty("user.dir")+"\\src\\IEDriverServer.exe");
 			 driver=new InternetExplorerDriver();
 			
 		}
@@ -59,7 +59,7 @@ public class BaseDetails {
 	{
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File source =ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("D:\\Learnings\\UsTechSolutions\\FlipAssignment\\reports\\"+testCaseName+".png");
+		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
 		FileUtils.copyFile(source,new File(destinationFile));
 		
 		return destinationFile;

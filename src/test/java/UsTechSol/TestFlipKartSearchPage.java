@@ -163,7 +163,7 @@ public class TestFlipKartSearchPage extends BaseDetails {
 				Utls.implicit_Wait2("Television");
 				//Take screenshot here with 3 televisions getting compared
 				File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-				FileUtils.copyFile(scrFile, new File("D:\\Learnings\\UsTechSolutions\\FlipAssignment\\target\\ComparePagescreenshot.png"));
+				FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\FlipAssignment\\comparison.png"));
 			
 			   //Check the compare page product list for minimum product price
 				FlipKartComparePage FKCompare=new FlipKartComparePage(driver);
